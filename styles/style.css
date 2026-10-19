@@ -184,7 +184,7 @@
   font-weight: 400;
   letter-spacing: 5px;
   margin-top: -16px;
-  text-shadow: 0 5px 6px rgb(213, 131, 180);
+  text-shadow: 0 5px 6px var(--rose-shadow);
 }
 
 /* -----------------------
@@ -300,7 +300,7 @@
   position: relative;
 
   border: 2px solid var(--rose);
-  outline: 5px solid rgba(194, 120, 165, 0.25);
+  outline: 5px solid var(--rose-outline);
 
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
 }
@@ -982,4 +982,13 @@ footer a:hover {
 
 .palabras b {
   color: var(--rose);
+}
+
+/* Sello con inicial (sustituye la imagen del "15") */
+.wax-seal-letra {
+  background: radial-gradient(circle at 35% 35%, #f6e27a, #c9a44c 60%, #8c6a26);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  font-family: var(--font-subtitulos);
+  font-size: 2.4rem;
+  color: var(--ivory-paper);
 }

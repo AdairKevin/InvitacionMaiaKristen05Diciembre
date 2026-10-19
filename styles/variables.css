@@ -5,9 +5,11 @@
 
 :root {
   --gold-gradient: linear-gradient(120deg, #f6e27a, #c9a44c, #a57c2c, #f6e27a);
-  --rose: #a07070;
-  --rose-main: #c9a3a6;
-  --rose-light: #f2e6e7;
+  --rose: #b0678d;
+  --rose-main: #e8b4c8;
+  --rose-light: #f3eaf8;
+  --rose-shadow: rgb(221, 170, 214);
+  --rose-outline: rgba(200, 160, 220, 0.3);
   --gold-elegant: #c9a44c;
   --gray-pearl: #8f8a86;
   --ivory-paper: #f7f3eb;
