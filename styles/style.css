@@ -988,7 +988,7 @@ footer a:hover {
 .wax-seal-letra {
   background: radial-gradient(circle at 35% 35%, #f6e27a, #c9a44c 60%, #8c6a26);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  font-family: var(--font-subtitulos);
+  font-family: var(--font-titulos);
   font-size: 2.4rem;
   color: var(--ivory-paper);
 }
