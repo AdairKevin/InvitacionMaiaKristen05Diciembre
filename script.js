@@ -76,3 +76,21 @@ openBtn.addEventListener("click", () => {
     invitation.classList.remove("hidden");
   }, 1200);
 });
+
+/* confirmación por WhatsApp */
+document.querySelectorAll(".rsvp-form").forEach((form) => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const datos = new FormData(form);
+    let texto =
+      `¡Hola! Confirmo mi asistencia a ${form.dataset.evento}.\n` +
+      `Nombre: ${datos.get("nombre").trim()}\n` +
+      `Número de asistentes: ${datos.get("personas")}`;
+    const mensaje = (datos.get("mensaje") || "").trim();
+    if (mensaje) texto += `\nMensaje: ${mensaje}`;
+    window.open(
+      `https://wa.me/${form.dataset.whatsapp}?text=${encodeURIComponent(texto)}`,
+      "_blank"
+    );
+  });
+});
